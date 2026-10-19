@@ -1,0 +1,25 @@
+upcoming/
+
+# Python & Jupyter Virtual Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Environment & Dependencies
+.env
+.venv
+env/
+venv/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Build & Package Metadata
+*.egg-info/
+build/
+dist/
+
+# Intermediate HTML Print Templates
+laporan_printable.html

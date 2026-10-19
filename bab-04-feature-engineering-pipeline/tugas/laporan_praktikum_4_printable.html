@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Laporan Praktikum Bab 04 - Anggit Arisa Siwi Pratama - 202343570045</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 11mm 14mm 11mm 14mm;
+            @bottom-right {
+                content: counter(page) " / " counter(pages);
+                font-size: 8pt;
+                font-family: 'Segoe UI', Arial, sans-serif;
+            }
+        }
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            color: #000000;
+            line-height: 1.38;
+            font-size: 8.5pt;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        /* Judul Dokumen Langsung */
+        .doc-header {
+            text-align: center;
+            margin: 0 0 6px 0;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #000000;
+        }
+        .doc-header h2 {
+            font-size: 12pt;
+            font-weight: 800;
+            margin: 0 0 2px 0;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+        .doc-header .doc-subtitle {
+            font-size: 8.8pt;
+            font-weight: 600;
+            color: #000000;
+            margin: 0;
+        }
+        /* Biodata Mahasiswa Tabel Standar */
+        table.meta-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 7px;
+            font-size: 8pt;
+            border: 1px solid #000000;
+        }
+        table.meta-table td {
+            padding: 3px 6px;
+            vertical-align: middle;
+            border: 1px solid #000000;
+            color: #000000;
+        }
+        table.meta-table td.meta-label {
+            width: 18%;
+            font-weight: 600;
+            background-color: #f5f5f5;
+        }
+        table.meta-table td.meta-colon {
+            width: 2%;
+            text-align: center;
+            padding: 3px 0;
+        }
+        table.meta-table td.meta-value {
+            width: 30%;
+            font-weight: 700;
+        }
+        /* Abstrak Standar Akademik */
+        .abstract-section {
+            margin-bottom: 6px;
+            padding: 0;
+        }
+        .abstract-title {
+            text-align: center;
+            font-weight: 800;
+            font-size: 8.8pt;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 2px;
+        }
+        .abstract-text {
+            font-size: 8pt;
+            text-align: justify;
+            line-height: 1.36;
+            color: #000000;
+            margin: 0;
+        }
+        /* Headings */
+        h4.section-title {
+            font-size: 9.2pt;
+            font-weight: 750;
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 2px;
+            margin: 7px 0 4px 0;
+        }
+        p {
+            margin: 0 0 4px 0;
+            text-align: justify;
+            color: #000000;
+        }
+        ul {
+            margin: 0 0 5px 0;
+            padding-left: 17px;
+            color: #000000;
+        }
+        li {
+            margin-bottom: 2px;
+        }
+        /* Tabel Standar */
+        table.academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 7.8pt;
+            margin: 3px 0 5px 0;
+            border: 1px solid #000000;
+        }
+        table.academic-table th {
+            background-color: #f2f2f2;
+            color: #000000;
+            font-weight: 700;
+            text-align: left;
+            padding: 3.5px 6px;
+            border: 1px solid #000000;
+        }
+        table.academic-table td {
+            padding: 3px 6px;
+            border: 1px solid #000000;
+            color: #000000;
+        }
+        table.academic-table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        /* Formula Box */
+        .formula-box {
+            text-align: center;
+            margin: 4px 0;
+            font-size: 8.2pt;
+        }
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 2px;
+            font-size: 7.8pt;
+        }
+        .fraction > span {
+            display: block;
+            padding: 0 2px;
+        }
+        .fraction span.bottom {
+            border-top: 1px solid #000000;
+        }
+        /* Code Block */
+        pre.code-block {
+            background: #18181b;
+            color: #f4f4f5;
+            padding: 6px 8px;
+            border-radius: 4px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 7pt;
+            line-height: 1.25;
+            overflow-x: hidden;
+            margin: 3px 0 5px 0;
+            border: 1px solid #000000;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        /* Visual Chart Box */
+        .chart-container {
+            text-align: center;
+            margin: 3px 0 2px 0;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        .chart-container img {
+            max-width: 68%;
+            max-height: 125px;
+            object-fit: contain;
+            border: 1px solid #000000;
+            border-radius: 4px;
+        }
+        .chart-caption {
+            font-size: 7.5pt;
+            color: #000000;
+            margin-top: 2px;
+            font-style: italic;
+        }
+        .page-break-before {
+            page-break-before: always;
+            break-before: page;
+        }
+        .avoid-break {
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- JUDUL LAPORAN LANGSUNG -->
+    <div class="doc-header">
+        <h2>LAPORAN PRAKTIKUM MACHINE LEARNING &mdash; BAB 04</h2>
+        <div class="doc-subtitle">Rekayasa Fitur dan Konstruksi Pipeline Bebas Kebocoran Data (Studi Kasus Titanic)</div>
+    </div>
+
+    <!-- BIODATA MAHASISWA TABEL STANDAR -->
+    <table class="meta-table">
+        <tr>
+            <td class="meta-label">Nama Mahasiswa</td>
+            <td class="meta-colon">:</td>
+            <td class="meta-value">ANGGIT ARISA SIWI PRATAMA</td>
+            <td class="meta-label">Mata Kuliah</td>
+            <td class="meta-colon">:</td>
+            <td class="meta-value">Machine Learning *) #) (KK43K780)</td>
+        </tr>
+        <tr>
+            <td class="meta-label">NPM</td>
+            <td class="meta-colon">:</td>
+            <td class="meta-value">202343570045</td>
+            <td class="meta-label">Dosen</td>
+            <td class="meta-colon">:</td>
+            <td class="meta-value">Nurfidah Dwitiyanti, M.Kom.</td>
+        </tr>
+        <tr>
+            <td class="meta-label">Kelas</td>
+            <td class="meta-colon">:</td>
+            <td class="meta-value">XC Ekstensi</td>
+            <td class="meta-label">Tanggal Pelaksanaan</td>
+            <td class="meta-colon">:</td>
+            <td class="meta-value">02 Oktober 2026</td>
+        </tr>
+    </table>
+
+    <!-- ABSTRAK STANDAR -->
+    <div class="abstract-section">
+        <div class="abstract-title">Abstrak</div>
+        <p class="abstract-text">
+            Laporan ini mendokumentasikan penyelesaian Tugas Praktikum Bab 04 mengenai implementasi rekayasa fitur (<em>feature engineering</em>) dan konstruksi pipeline terintegrasi. Berdasarkan instruksi penugasan resmi (Modul 4 Halaman 24), dataset properti sintetik digantikan dengan dataset riil penumpang Titanic (<em>N</em> = 891). Karakteristik data ini meliputi keberadaan data hilang pada kolom <code>age</code> (19.87%) dan <code>embarked</code> (0.22%), serta tipe data campuran (kontinu, nominal, dan ordinal). Kami melakukan validasi statistik menggunakan Chi-Square (&chi;<sup>2</sup>), merekayasa tiga fitur turunan domain (<code>family_size</code>, <code>is_alone</code>, dan <code>fare_per_person</code>), serta membangun arsitektur <code>ColumnTransformer</code> scikit-learn. Model dievaluasi menggunakan pembagian data terstratifikasi 80:20 (<em>N</em><sub>test</sub> = 179). Hasil evaluasi menunjukkan bahwa penambahan fitur hasil rekayasa pada model <em>Logistic Regression</em> meningkatkan akurasi dari 77.65% (<em>F</em><sub>1</sub> = 0.6970) menjadi 79.33% (<em>F</em><sub>1</sub> = 0.7132).
+        </p>
+    </div>
+
+    <!-- 1. LANDASAN TEORI -->
+    <h4 class="section-title">1. Landasan Teori dan Latar Belakang</h4>
+    <p>
+        Tahap pra-pemrosesan data merupakan fase fundamental dalam siklus CRISP-DM (<em>Data Preparation</em>). Pada data mentah dunia nyata, pemberian data langsung ke algoritma tanpa standarisasi statistik menimbulkan tiga permasalahan kritis:
+    </p>
+    <p>
+        <strong>1. Kegagalan Eksekusi Numerik</strong>: Model klasifikasi standar (regresi logistik dan neural network) tidak dapat menerima nilai hilang (<em>missing values</em>) maupun variabel teks kategorikal secara langsung.<br>
+        <strong>2. Dominasi Skala</strong>: Variabel berrentang lebar seperti <code>fare</code> (0 s.d. 512.33) mendominasi perhitungan bobot gradien terhadap variabel sempit seperti <code>age</code> (0.42 s.d. 80.0), sehingga menuntut standarisasi skor baku (<em>z</em> = (<em>x</em> &minus; &mu;) / &sigma;).<br>
+        <strong>3. Kebocoran Data (<em>Data Leakage</em>)</strong>: Terjadi bila statistik global (seperti median atau modus seluruh baris) dihitung sebelum pemisahan data latih (<em>training set</em>) dan data uji (<em>test set</em>). Untuk menjamin objektivitas generalisasi, seluruh transformasi wajib dienkapsulasi menggunakan objek <code>ColumnTransformer</code> di dalam <code>Pipeline</code>.
+    </p>
+
+    <!-- 2. UJI ASOSIASI CHI-SQUARE -->
+    <h4 class="section-title">2. Uji Asosiasi Statistik Chi-Square (&chi;<sup>2</sup>)</h4>
+    <p>
+        Sesuai materi seleksi fitur metode filter (Modul 4 Halaman 14&ndash;16), uji independensi Chi-Square digunakan untuk mengukur signifikansi korelasi antara variabel input kategorikal terhadap target keselamatan <code>survived</code>:
+    </p>
+
+    <div class="formula-box">
+        &chi;<sup>2</sup> = &sum;<sub><i>i</i>=1</sub><sup><i>r</i></sup> &sum;<sub><i>j</i>=1</sub><sup><i>c</i></sup>
+        <div class="fraction"><span>(<i>O<sub>ij</sub></i> &minus; <i>E<sub>ij</sub></i>)<sup>2</sup></span><span class="bottom"><i>E<sub>ij</sub></i></span></div>,
+        &nbsp;&nbsp;&nbsp; dengan &nbsp;&nbsp;&nbsp;
+        <i>E<sub>ij</sub></i> =
+        <div class="fraction"><span><i>R<sub>i</sub></i> &times; <i>C<sub>j</sub></i></span><span class="bottom"><i>N</i></span></div>
+    </div>
+
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>Nama Fitur</th>
+                <th>Tipe Data</th>
+                <th>Derajat Bebas (<i>df</i>)</th>
+                <th>Nilai &chi;<sup>2</sup> Hitung</th>
+                <th>Nilai <i>p</i>-value</th>
+                <th>Keputusan (&alpha; = 0.05)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>sex</strong></td>
+                <td>Kategorikal Nominal</td>
+                <td>1</td>
+                <td>260.717</td>
+                <td>1.197 &times; 10<sup>&minus;58</sup></td>
+                <td>Tolak <i>H</i><sub>0</sub> (Sangat Signifikan, Prediktor Utama)</td>
+            </tr>
+            <tr>
+                <td><strong>pclass</strong></td>
+                <td>Diskrit Ordinal</td>
+                <td>2</td>
+                <td>102.889</td>
+                <td>4.549 &times; 10<sup>&minus;23</sup></td>
+                <td>Tolak <i>H</i><sub>0</sub> (Sangat Signifikan)</td>
+            </tr>
+            <tr>
+                <td><strong>embarked</strong></td>
+                <td>Kategorikal Nominal</td>
+                <td>2</td>
+                <td>26.489</td>
+                <td>1.770 &times; 10<sup>&minus;6</sup></td>
+                <td>Tolak <i>H</i><sub>0</sub> (Signifikan)</td>
+            </tr>
+            <tr>
+                <td><strong>is_alone</strong> (Rekayasa)</td>
+                <td>Biner Indikator</td>
+                <td>1</td>
+                <td>36.002</td>
+                <td>1.972 &times; 10<sup>&minus;9</sup></td>
+                <td>Tolak <i>H</i><sub>0</sub> (Signifikan, Validasi Fitur)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chart-container">
+        <img src="visual_output/chi_square_features.png" alt="Uji Chi-Square Fitur Titanic">
+        <div class="chart-caption">Gambar 1. Nilai Statistik Chi-Square (&chi;<sup>2</sup>) Fitur Kategorikal terhadap Kelangsungan Hidup Penumpang</div>
+    </div>
+
+    <!-- HALAMAN 2: REKAYASA FITUR, ARSITEKTUR PIPELINE, DAN IMPLEMENTASI SOURCE CODE PYTHON -->
+    <div class="page-break-before"></div>
+
+    <!-- 3. REKAYASA FITUR -->
+    <h4 class="section-title">3. Rekayasa Fitur Domain (<em>Feature Construction</em>)</h4>
+    <p>
+        Berdasarkan konteks penyelamatan pada kecelakaan Titanic, tiga fitur turunan baru dikonstruksi:
+    </p>
+    <p>
+        <strong>1. <code>family_size</code></strong> (<i>x</i><sub>keluarga</sub> = sibsp + parch + 1):<br>
+        Menggabungkan total anggota keluarga penumpang di kapal (saudara, pasangan, orang tua, anak) ditambah individu penumpang.
+    </p>
+    <p>
+        <strong>2. <code>is_alone</code></strong> (Indikator <i>family_size</i> = 1):<br>
+        Variabel indikator biner bernilai 1 jika penumpang bepergian sendiri, dan 0 jika memiliki rombongan keluarga.
+    </p>
+    <p>
+        <strong>3. <code>fare_per_person</code></strong> (<i>x</i><sub>tarif_individu</sub> = fare / family_size):<br>
+        Membagi harga tiket rombongan dengan jumlah keluarga guna memperoleh daya beli riil per individu penumpang.
+    </p>
+
+    <!-- 4. ARSITEKTUR PIPELINE -->
+    <h4 class="section-title">4. Arsitektur Preprocessing Pipeline (ColumnTransformer)</h4>
+    <p>
+        Proses transformasi data dibagi ke dalam tiga jalur terisolasi tanpa intervensi data uji:
+    </p>
+    <ul>
+        <li><strong>Jalur Numerik</strong> (<code>age</code>, <code>fare</code>, <code>family_size</code>, <code>fare_per_person</code>): Diimputasi menggunakan nilai median data latih (tahan pencilan), dilanjutkan standardisasi deviasi melalui <code>StandardScaler()</code>.</li>
+        <li><strong>Jalur Kategorikal Nominal</strong> (<code>sex</code>, <code>embarked</code>): Diimputasi dengan nilai modus (frekuensi terbanyak), dilanjutkan pengkodean biner menggunakan <code>OneHotEncoder(drop='first', handle_unknown='ignore')</code> guna menghindari multikolinearitas.</li>
+        <li><strong>Jalur Ordinal</strong> (<code>pclass</code>): Diimputasi dengan modus, lalu dipetakan secara hierarki numerik menggunakan <code>OrdinalEncoder(categories=[[1, 2, 3]])</code>.</li>
+    </ul>
+
+    <!-- 5. IMPLEMENTASI SOURCE CODE PYTHON -->
+    <h4 class="section-title">5. Implementasi Source Code Python</h4>
+    <pre class="code-block">import seaborn as sns, pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+
+# 1. Pemuatan &amp; Rekayasa Fitur
+df = sns.load_dataset('titanic')
+df['family_size'] = df['sibsp'] + df['parch'] + 1
+df['is_alone'] = (df['family_size'] == 1).astype(int)
+df['fare_per_person'] = df['fare'] / df['family_size']
+
+fitur_num = ['age', 'fare', 'family_size', 'fare_per_person']
+fitur_cat = ['sex', 'embarked']
+fitur_ord = ['pclass']
+X = df[fitur_num + fitur_cat + fitur_ord]
+y = df['survived']
+
+# 2. Pembagian Data Terstratifikasi (80% Train, 20% Test)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, stratify=y, random_state=42)
+
+# 3. Pembangunan ColumnTransformer
+preprocessor = ColumnTransformer(transformers=[
+    ('num', Pipeline([('imp', SimpleImputer(strategy='median')), ('scaler', StandardScaler())]), fitur_num),
+    ('cat', Pipeline([('imp', SimpleImputer(strategy='most_frequent')), ('ohe', OneHotEncoder(drop='first', handle_unknown='ignore'))]), fitur_cat),
+    ('ord', Pipeline([('imp', SimpleImputer(strategy='most_frequent')), ('ord', OrdinalEncoder(categories=[[1, 2, 3]]))]), fitur_ord)
+])
+
+# 4. Pipeline Estimator
+pipe_lr = Pipeline([('prep', preprocessor), ('model', LogisticRegression(max_iter=1000, random_state=42))])
+pipe_rf = Pipeline([('prep', preprocessor), ('model', RandomForestClassifier(n_estimators=100, random_state=42))])
+
+# 5. Pelatihan dan Evaluasi Bebas Leakage
+pipe_lr.fit(X_train, y_train)
+pipe_rf.fit(X_train, y_train)
+pred_lr = pipe_lr.predict(X_test)
+pred_rf = pipe_rf.predict(X_test)</pre>
+
+    <!-- HALAMAN 3: HASIL EVALUASI DAN KESIMPULAN -->
+    <div class="page-break-before"></div>
+
+    <!-- 6. HASIL EVALUASI -->
+    <h4 class="section-title">6. Hasil Evaluasi Kinerja Model (<i>N</i><sub>test</sub> = 179)</h4>
+    <table class="academic-table">
+        <thead>
+            <tr>
+                <th>Model Eksperimen</th>
+                <th>Fitur Input</th>
+                <th>Akurasi</th>
+                <th>Presisi</th>
+                <th>Recall</th>
+                <th>F1-Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1. Baseline Logistic Regression</strong></td>
+                <td><code>age</code>, <code>fare</code>, <code>sex</code>, <code>embarked</code></td>
+                <td>77.65%</td>
+                <td>73.02%</td>
+                <td>66.67%</td>
+                <td>0.6970</td>
+            </tr>
+            <tr>
+                <td><strong>2. Enhanced Logistic Regression</strong></td>
+                <td>Baseline + <code>pclass</code>, <code>family_size</code>, <code>fare_per_person</code></td>
+                <td><strong>79.33%</strong></td>
+                <td><strong>76.67%</strong></td>
+                <td>66.67%</td>
+                <td><strong>0.7132</strong></td>
+            </tr>
+            <tr>
+                <td><strong>3. Enhanced Random Forest</strong></td>
+                <td>Baseline + <code>pclass</code>, <code>family_size</code>, <code>fare_per_person</code></td>
+                <td>78.77%</td>
+                <td>73.85%</td>
+                <td><strong>69.57%</strong></td>
+                <td><strong>0.7164</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chart-container">
+        <img src="visual_output/confusion_matrix_comparison.png" alt="Confusion Matrix Komparasi">
+        <div class="chart-caption">Gambar 2. Komparasi Matriks Konfusi Model Logistic Regression dan Random Forest pada Data Uji</div>
+    </div>
+
+    <!-- 7. KESIMPULAN -->
+    <h4 class="section-title">7. Kesimpulan</h4>
+    <p>
+        1. <strong>Efektivitas Konstruksi Fitur</strong>: Rekayasa fitur domain (<code>family_size</code>, <code>fare_per_person</code>, dan <code>pclass</code>) secara empiris menaikkan akurasi linier sebesar <strong>+1.68%</strong> dan skor <i>F</i><sub>1</sub> dari 0.6970 menjadi 0.7132.<br>
+        2. <strong>Keunggulan Random Forest</strong>: Menghasilkan daya ingat (Recall) tertinggi (<strong>69.57%</strong>), membuktikan kemampuannya menangkap interaksi non-linier antara usia dan ukuran keluarga.<br>
+        3. <strong>Pencegahan Kebocoran Data</strong>: Implementasi <code>ColumnTransformer</code> di dalam <code>Pipeline</code> memastikan bahwa seluruh parameter imputasi dan penskalaan hanya dihitung dari data latih, menjamin integritas validitas ilmiah pengujian.
+    </p>
+
+</body>
+</html>
