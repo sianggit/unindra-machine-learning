@@ -9,6 +9,13 @@
 | **Mata Kuliah** | **Machine Learning** (Kode: `KK43K780`) |
 | **Dosen Pengampu** | **Nurfidah Dwitiyanti, M.Kom.** |
 | **Institusi** | Fakultas Teknik & Ilmu Komputer, **Universitas Indraprasta PGRI (Unindra)** |
+| **Portal Interaktif (Live Demo)** | **[ml-lab-anggitp.vercel.app](https://ml-lab-anggitp.vercel.app/)** |
+
+---
+
+> 🌐 **Live Playground & Simulasi Interaktif**:  
+> Seluruh implementasi model, notebook interaktif berbasis WebAssembly (Pyodide), visualisasi grafik dinamis, serta lembar jawaban analitis tugas UTS dapat dijalankan secara langsung melalui portal web:  
+> 👉 **[https://ml-lab-anggitp.vercel.app/](https://ml-lab-anggitp.vercel.app/)**
 
 ---
 
