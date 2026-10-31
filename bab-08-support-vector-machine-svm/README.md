@@ -22,8 +22,8 @@ bab-08-support-vector-machine-svm/
 ├── 08_alternatif_solar_panel_fault_svm_kernels.ipynb # Notebook studi kasus alternatif
 ├── LAPORAN_BAB_08_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf # Dokumen Laporan Resmi Cetak
 ├── laporan_printable.html                       # Template HTML cetak laporan
-├── materi/                                      # Arsip materi & lembar modul perkuliahan
-│   └── Modul_08_Support_Vector_Machine_SVM.pdf
+├── materi/                                      # Arsip materi resmi perkuliahan (menunggu rilis resmi dosen di LMS)
+│   └── .gitkeep
 ├── visual_output/                               # Grafik visual hasil komputasi
 │   ├── 08_svm_hyperplane_margins.png
 │   └── 08_svm_kernel_comparison.png

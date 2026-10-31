@@ -22,8 +22,8 @@ bab-09-ensemble-learning-dan-rf/
 ├── 09_alternatif_telco_churn_ensemble_methods.ipynb # Notebook studi kasus alternatif
 ├── LAPORAN_BAB_09_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf # Dokumen Laporan Resmi Cetak
 ├── laporan_printable.html                       # Template HTML cetak laporan
-├── materi/                                      # Arsip materi & lembar modul perkuliahan
-│   └── Modul_09_Ensemble_Learning_dan_RF.pdf
+├── materi/                                      # Arsip materi resmi perkuliahan (menunggu rilis resmi dosen di LMS)
+│   └── .gitkeep
 ├── visual_output/                               # Grafik visual hasil komputasi
 │   ├── 09_ensemble_methods_comparison.png
 │   └── 09_feature_importance_rf.png
