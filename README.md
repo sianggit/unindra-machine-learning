@@ -32,6 +32,9 @@ Repositori ini memuat berkas penugasan dan praktikum komputasional yang telah di
 | [`bab-05-decision-tree`](./bab-05-decision-tree/) | Pohon Keputusan CART & C4.5, Gini Impurity, Alpha Pruning | UMKM Microloan Applications | [Laporan Bab 05 (PDF)](./bab-05-decision-tree/LAPORAN_BAB_05_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf) |
 | [`bab-06-knn-naive-bayes`](./bab-06-knn-naive-bayes/) | K-NN Distance-Weighted (L1/L2) vs Multinomial Naive Bayes | E-Commerce Sentiment Reviews | [Laporan Bab 06 (PDF)](./bab-06-knn-naive-bayes/LAPORAN_BAB_06_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf) |
 | [`tugas-uts-pertemuan-1-6`](./tugas-uts-pertemuan-1-6/) | Solusi Komputasional 5 Paket Soal Studi Kasus KirimCepat | Ekspedisi KirimCepat (10.000 Sampel) | [Laporan Tugas UTS (PDF)](./tugas-uts-pertemuan-1-6/LAPORAN_TUGAS_UTS_KIRIMCEPAT_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf) |
+| [`bab-07-evaluasi-model-klasifikasi`](./bab-07-evaluasi-model-klasifikasi/) | Matriks Konfusi, Presisi, Recall, F1-Score, ROC-AUC, Stratified K-Fold | Cyber Intrusion Logs (N=1.000) | [Laporan Bab 07 (PDF)](./bab-07-evaluasi-model-klasifikasi/LAPORAN_BAB_07_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf) |
+| [`bab-08-support-vector-machine-svm`](./bab-08-support-vector-machine-svm/) | Maximal Margin Hyperplane, Support Vectors, Komparasi Kernel (RBF/Linear) | Solar Panel Faults (N=400) | [Laporan Bab 08 (PDF)](./bab-08-support-vector-machine-svm/LAPORAN_BAB_08_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf) |
+| [`bab-09-ensemble-learning-dan-rf`](./bab-09-ensemble-learning-dan-rf/) | Ensemble Bagging (Random Forest) vs Boosting, Out-of-Bag (OOB) Score | Telco Churn Customers (N=600) | [Laporan Bab 09 (PDF)](./bab-09-ensemble-learning-dan-rf/LAPORAN_BAB_09_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf) |
 
 ---
 
