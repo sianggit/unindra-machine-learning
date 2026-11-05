@@ -1,0 +1,67 @@
+{
+  "best_model_name": "Random Forest",
+  "combined_score": 0.6679,
+  "feature_names": [
+    "pendapatan_bulanan",
+    "usia",
+    "lama_kerja",
+    "jumlah_pinjaman",
+    "rasio_cicilan",
+    "skor_kredit"
+  ],
+  "scaler_stats": {
+    "means": {
+      "pendapatan_bulanan": 10296250.0,
+      "usia": 41.165625,
+      "lama_kerja": 15.941666666666666,
+      "jumlah_pinjaman": 44567708.333333336,
+      "rasio_cicilan": 0.23271770833333336,
+      "skor_kredit": 646.5760416666667
+    },
+    "stds": {
+      "pendapatan_bulanan": 5323027.913988144,
+      "usia": 11.886352073501111,
+      "lama_kerja": 11.494602865238306,
+      "jumlah_pinjaman": 36059786.97470983,
+      "rasio_cicilan": 0.28009803605307687,
+      "skor_kredit": 77.99609926450121
+    }
+  },
+  "feature_importances": {
+    "pendapatan_bulanan": 0.11230297822039832,
+    "usia": 0.0798891393762552,
+    "lama_kerja": 0.07108238445844824,
+    "jumlah_pinjaman": 0.1278410750388616,
+    "rasio_cicilan": 0.5028065183189698,
+    "skor_kredit": 0.10607790458706684
+  },
+  "benchmark_summary": [
+    {
+      "name": "Random Forest",
+      "cv_f1": 0.7235,
+      "test_f1": 0.697,
+      "recall": 0.7419,
+      "roc_auc": 0.9379,
+      "interpretability": 3,
+      "combined_score": 0.6679
+    },
+    {
+      "name": "Gradient Boosting",
+      "cv_f1": 0.7092,
+      "test_f1": 0.6667,
+      "recall": 0.6452,
+      "roc_auc": 0.8924,
+      "interpretability": 2,
+      "combined_score": 0.5867
+    },
+    {
+      "name": "SVM (RBF Kernel)",
+      "cv_f1": 0.679,
+      "test_f1": 0.6575,
+      "recall": 0.7742,
+      "roc_auc": 0.8835,
+      "interpretability": 2,
+      "combined_score": 0.5803
+    }
+  ]
+}
