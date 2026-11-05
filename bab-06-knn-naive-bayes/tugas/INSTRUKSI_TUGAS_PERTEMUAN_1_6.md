@@ -1,17 +1,17 @@
-# 📋 Tugas Machine Learning Pertemuan 1 - 6 (Kisi-Kisi UTS)
-**Mata Kuliah**: Machine Learning *) #) (Kelas XC)  
-**Dosen Pengampu**: Nurfidah Dwitiyanti  
+# Tugas Machine Learning Pertemuan 1 - 6 (Kisi-Kisi UTS)
+**Mata Kuliah**: Machine Learning (Kelas XC)  
+**Dosen Pengampu**: Nurfidah Dwitiyanti, M.Si.  
 **Sumber**: LMS UNINDRA  
 **File Soal Asli**: [`./Tugas_Machine_Learning_Pertemuan_1-6_Soal.pdf`](./Tugas_Machine_Learning_Pertemuan_1-6_Soal.pdf)
 
 ---
 
-## 📌 Ketentuan dan Batas Waktu Pengumpulan
+## Ketentuan dan Batas Waktu Pengumpulan
 - **Waktu Mulai**: 16 Oktober 2026, 20:39:00 WIB
 - **Batas Akhir Submit**: 22 Oktober 2026, 23:59:00 WIB
 - **Format File**: 1 Berkas PDF (Hasil scan/foto tulisan tangan)
 
-### ⚠️ Aturan Pengerjaan dari Dosen:
+### Aturan Pengerjaan dari Dosen:
 1. **Individu**: Tugas dikerjakan secara individu. Jawaban yang sama persis antarmahasiswa dinilai nol untuk semua pihak.
 2. **Keterlambatan**: Pengumpulan setelah batas waktu tidak diterima, kecuali ada alasan yang sah dan disampaikan sebelum batas waktu.
 3. **Diskusi**: Pertanyaan tentang soal diajukan di WAG agar jawabannya bisa dibaca semua mahasiswa.
@@ -20,7 +20,7 @@
 
 ---
 
-## 📝 Ringkasan Soal Tugas (Kisi-Kisi UTS)
+## Ringkasan Soal Tugas (Kisi-Kisi UTS)
 
 ### Soal 1: Studi Kasus KirimCepat & Workflow ML (CRISP-DM & Evaluasi)
 - **Konteks**: 10.000 data pengiriman (8.800 tepat waktu, 1.200 terlambat). Kelas positif = terlambat.

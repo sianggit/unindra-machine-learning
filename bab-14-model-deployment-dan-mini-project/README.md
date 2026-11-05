@@ -56,17 +56,23 @@ bab-14-model-deployment-dan-mini-project/
 python main.py
 ```
 
-### 2. Menjalankan Aplikasi Web Streamlit Secara Lokal
-```bash
-streamlit run app.py
-```
-*Aplikasi akan otomatis terbuka pada peramban web di `http://localhost:8501`.*
+### 2. Menjalankan Aplikasi Web Produksi Secara Lokal
 
-### 3. Mengakses Live Simulator di Vercel Production
-Kunjungi portal simulasi web laboratorium:
-```text
-https://<domain-vercel-anda>/ml-lab/14-model-deployment-dan-mini-project
+```bash
+# Menjalankan antarmuka Streamlit
+streamlit run app.py
+
+# Menjalankan REST API & Form Web Flask
+python flask_app.py
+
+# Menjalankan pengujian otomatis suite deployment
+python test_deployment_apps.py
 ```
+
+### 3. Mengakses Live Cloud Deployment
+
+- **Streamlit Community Cloud**: [https://unindra-machine-learning-anggitp.streamlit.app/](https://unindra-machine-learning-anggitp.streamlit.app/)
+- **Vercel Interactive Lab**: [https://ml-lab-anggitp.vercel.app/ml-lab/14-model-deployment-dan-mini-project](https://ml-lab-anggitp.vercel.app/ml-lab/14-model-deployment-dan-mini-project)
 
 ---
 

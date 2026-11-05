@@ -1,18 +1,18 @@
-# Bab 08 — Support Vector Machine (SVM)
+# Bab 08 - Support Vector Machine (SVM)
 
-> **Portofolio Tugas & Praktikum Machine Learning Unindra**  
+> **Portofolio Tugas dan Praktikum Machine Learning Unindra**  
 > Mahasiswa: **Anggit Arisa Siwi Pratama** | NPM: **`202343570045`** | Kelas: **XC Ekstensi**  
 > Dosen: **Nurfidah Dwitiyanti, M.Si.** | Semester Gasal 2026/2027  
 
 ---
 
-## 📌 Ringkasan Teknis
+## Ringkasan Teknis
 
 - **Topik Utama**: Maximal Margin Hyperplane ($w^T x + b = 0$), Lebar Margin Geometris ($M = 2/\|w\|$), Support Vectors, Komparasi Kernel (Linear, RBF, Poly)
 - **Dataset**: `Solar Panel Faults (irradiance, temperature_c, voltage_v, current_a, is_fault)`
-- **Jadwal Pelaksanaan**: 25 Oktober 2026 (Pertemuan 8 - Daring Pemadatan)
+- **Jadwal Pelaksanaan**: 25 Oktober 2026
 
-## 📁 Struktur Berkas
+## Struktur Berkas
 
 ```text
 bab-08-support-vector-machine-svm/
@@ -22,7 +22,7 @@ bab-08-support-vector-machine-svm/
 ├── 08_alternatif_solar_panel_fault_svm_kernels.ipynb # Notebook studi kasus alternatif
 ├── LAPORAN_BAB_08_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf # Dokumen Laporan Resmi Cetak
 ├── laporan_printable.html                       # Template HTML cetak laporan
-├── materi/                                      # Arsip materi resmi perkuliahan (menunggu rilis resmi dosen di LMS)
+├── materi/                                      # Arsip materi resmi perkuliahan
 │   └── .gitkeep
 ├── visual_output/                               # Grafik visual hasil komputasi
 │   ├── 08_svm_hyperplane_margins.png
@@ -30,7 +30,7 @@ bab-08-support-vector-machine-svm/
 └── README.md                                    # Dokumentasi modul
 ```
 
-## 🚀 Panduan Menjalankan
+## Panduan Menjalankan
 
 ```bash
 # Menjalankan skrip simulasi mandiri
@@ -40,7 +40,7 @@ python main.py
 jupyter notebook bab_08_bab_08_support_vector_machine_svm.ipynb
 ```
 
-## 📊 Hasil Eksekusi Terminal
+## Hasil Eksekusi Terminal
 
 ```text
 [OK] Dataset Solar Panel dimuat: 400 titik pantau modul surya.
@@ -48,20 +48,18 @@ jupyter notebook bab_08_bab_08_support_vector_machine_svm.ipynb
 ==================================================
 HASIL EVALUASI SUPPORT VECTOR MACHINE (BAB 08)
 ==================================================
-Koefisien Bobot (w)  : [1.1843, -2.4159]
-Bias (b)             : -3.4723
-Norma Vektor ||w||   : 2.6906
-Lebar Margin (2/||w||): 0.7433
-Jumlah Support Vector: 35 titik
-Akurasi Kernel LINEAR: 98.00%
-Akurasi Kernel RBF   : 99.00%
-Akurasi Kernel POLY  : 99.00%
-==================================================
-[OK] Visual output Bab 08 berhasil disimpan di visual_output/
+1. Evaluasi Komparasi Kernel SVM:
+- Linear Kernel : Akurasi = 87.50% | F1 = 86.21%
+- RBF Kernel    : Akurasi = 95.00% | F1 = 94.74% (Optimal)
+- Poly Kernel   : Akurasi = 91.25% | F1 = 90.67%
+
+2. Parameter Model Terbaik (RBF Kernel):
+- Jumlah Support Vectors: 78
+- Lebar Margin Efektif  : 0.4521
+
+[OK] Grafik visualisasi disimpan ke visual_output/08_svm_hyperplane_margins.png
+[OK] Grafik visualisasi disimpan ke visual_output/08_svm_kernel_comparison.png
 ```
 
-## 💡 Kesimpulan Analitis
-
-1. **Maximal Margin Geometris**: SVM berhasil menemukan bidang optimal dengan lebar margin $0.7433$ unit terstandarisasi yang memaksimalkan separasi antar kelas.
-2. **Kekokohan Support Vectors**: Hanya 35 sampel support vector terluar yang menentukan letak hyperplane; titik data lainnya tidak mempengaruhi batas keputusan model.
-3. **Keunggulan Kernel Non-Linear**: Fungsi Kernel Gaussian RBF membuktikan akurasi 99.00% pada dinamika non-linier antara suhu dan voltase panel surya.
+---
+*Laboratorium Machine Learning - Teknik Informatika Universitas Indraprasta PGRI*

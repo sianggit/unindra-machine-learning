@@ -1,42 +1,42 @@
-# Bab 02 — Partisi Data Bebas Bias, K-Fold Stratifikasi & Diagnostik Tradeoff
+# Bab 02 - Partisi Data Bebas Bias, K-Fold Stratifikasi dan Diagnostik Tradeoff
 
-> **Portofolio Tugas & Praktikum Machine Learning Unindra**  
+> **Portofolio Tugas dan Praktikum Machine Learning Unindra**  
 > Mahasiswa: **Anggit Arisa Siwi Pratama** | NPM: **`202343570045`** | Kelas: **XC Ekstensi**  
-> Dosen: **Nurfidah Dwitiyanti, M.Kom.** | Semester Gasal 2026/2027  
+> Dosen: **Nurfidah Dwitiyanti, M.Si.** | Semester Gasal 2026/2027  
 
 ---
 
-## 📌 Ringkasan Teknis
+## Ringkasan Teknis
 
 - **Topik Utama**: Workflow CRISP-DM, Stratified K-Fold vs Random Holdout, Evaluasi Generalisasi
 - **Dataset**: `IBM HR Analytics Employee Attrition (pavansubhasht/ibm-hr-analytics)`
 - **Jadwal Pelaksanaan**: 12 September 2026
 
-## 📁 Struktur Berkas
+## Struktur Berkas
 
-```
+```text
 bab-02-workflow-ml/
 ├── main.py                         # Skrip executable Python mandiri
 ├── bab_02_bab_02_workflow_ml.ipynb  # Jupyter Notebook komprehensif
 ├── LAPORAN_BAB_02_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf # PDF Laporan Resmi
 ├── visual_output/
-│   └── cv_stability_barchart.png         # Grafik visual hasil pemodelan
+│   └── cv_stability_barchart.png   # Grafik visual hasil pemodelan
 └── README.md                       # Dokumentasi modul
 ```
 
-## 🚀 Panduan Menjalankan
+## Panduan Menjalankan
 
 ```bash
-# Menjalankan skrip Python
+# Menjalankan skrip Python mandiri
 python main.py
 
 # Membuka Jupyter Notebook
 jupyter notebook bab_02_bab_02_workflow_ml.ipynb
 ```
 
-## 📊 Hasil Eksekusi
+## Hasil Eksekusi
 
-```
+```text
 [OK] Dataset IBM HR Attrition dimuat dari CSV: 400 baris.
 Stratified 5-Fold Akurasi : [92.5, 92.5, 88.75, 91.25, 90.0]%
 Rata-rata Stratified       : 91.00% (Std: 0.0146)
@@ -45,4 +45,4 @@ Rata-rata Random K-Fold   : 90.75% (Std: 0.0170)
 ```
 
 ---
-*Laboratorium Machine Learning — Teknik Informatika Universitas Indraprasta PGRI*
+*Laboratorium Machine Learning - Teknik Informatika Universitas Indraprasta PGRI*

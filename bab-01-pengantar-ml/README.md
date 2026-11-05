@@ -1,42 +1,42 @@
-# Bab 01 — Pengantar Machine Learning, Lingkungan Komputasi & Matriks Kovariansi
+# Bab 01 - Pengantar Machine Learning, Lingkungan Komputasi dan Matriks Kovariansi
 
-> **Portofolio Tugas & Praktikum Machine Learning Unindra**  
+> **Portofolio Tugas dan Praktikum Machine Learning Unindra**  
 > Mahasiswa: **Anggit Arisa Siwi Pratama** | NPM: **`202343570045`** | Kelas: **XC Ekstensi**  
-> Dosen: **Nurfidah Dwitiyanti, M.Kom.** | Semester Gasal 2026/2027  
+> Dosen: **Nurfidah Dwitiyanti, M.Si.** | Semester Gasal 2026/2027  
 
 ---
 
-## 📌 Ringkasan Teknis
+## Ringkasan Teknis
 
 - **Topik Utama**: NumPy Vectorization, Z-Score Standardizer, Matriks Kovariansi Morfometrik
 - **Dataset**: `Palmer Archipelago Penguins (parulpandey/palmer-archipelago)`
 - **Jadwal Pelaksanaan**: 05 September 2026
 
-## 📁 Struktur Berkas
+## Struktur Berkas
 
-```
+```text
 bab-01-pengantar-ml/
 ├── main.py                         # Skrip executable Python mandiri
 ├── bab_01_bab_01_pengantar_ml.ipynb  # Jupyter Notebook komprehensif
 ├── LAPORAN_BAB_01_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf # PDF Laporan Resmi
 ├── visual_output/
-│   └── covariance_matrix_heatmap.png         # Grafik visual hasil pemodelan
+│   └── covariance_matrix_heatmap.png # Grafik visual hasil pemodelan
 └── README.md                       # Dokumentasi modul
 ```
 
-## 🚀 Panduan Menjalankan
+## Panduan Menjalankan
 
 ```bash
-# Menjalankan skrip Python
+# Menjalankan skrip Python mandiri
 python main.py
 
 # Membuka Jupyter Notebook
 jupyter notebook bab_01_bab_01_pengantar_ml.ipynb
 ```
 
-## 📊 Hasil Eksekusi
+## Hasil Eksekusi
 
-```
+```text
 [OK] Dataset Palmer Penguins dimuat dari CSV: 300 baris, 4 fitur.
 
 Matriks Kovariansi Fitur Morfometrik Terstandarisasi:
@@ -50,4 +50,4 @@ Matriks Kovariansi Fitur Morfometrik Terstandarisasi:
 ```
 
 ---
-*Laboratorium Machine Learning — Teknik Informatika Universitas Indraprasta PGRI*
+*Laboratorium Machine Learning - Teknik Informatika Universitas Indraprasta PGRI*

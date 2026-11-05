@@ -1,18 +1,18 @@
-# Bab 09 — Ensemble Learning & Random Forest
+# Bab 09 - Ensemble Learning dan Random Forest
 
-> **Portofolio Tugas & Praktikum Machine Learning Unindra**  
+> **Portofolio Tugas dan Praktikum Machine Learning Unindra**  
 > Mahasiswa: **Anggit Arisa Siwi Pratama** | NPM: **`202343570045`** | Kelas: **XC Ekstensi**  
 > Dosen: **Nurfidah Dwitiyanti, M.Si.** | Semester Gasal 2026/2027  
 
 ---
 
-## 📌 Ringkasan Teknis
+## Ringkasan Teknis
 
 - **Topik Utama**: Bagging vs Boosting, Random Forest, AdaBoost, Gradient Boosting, Out-of-Bag (OOB) Score, Gini Feature Importance
 - **Dataset**: `Telco Churn Customers (tenure, charges, support_calls, contract, internet_fiber)`
-- **Jadwal Pelaksanaan**: 30 – 31 Oktober 2026 (Pertemuan 9 - Daring LMS)
+- **Jadwal Pelaksanaan**: 30 - 31 Oktober 2026
 
-## 📁 Struktur Berkas
+## Struktur Berkas
 
 ```text
 bab-09-ensemble-learning-dan-rf/
@@ -22,7 +22,7 @@ bab-09-ensemble-learning-dan-rf/
 ├── 09_alternatif_telco_churn_ensemble_methods.ipynb # Notebook studi kasus alternatif
 ├── LAPORAN_BAB_09_ANGGIT_ARISA_SIWI_PRATAMA_202343570045.pdf # Dokumen Laporan Resmi Cetak
 ├── laporan_printable.html                       # Template HTML cetak laporan
-├── materi/                                      # Arsip materi resmi perkuliahan (menunggu rilis resmi dosen di LMS)
+├── materi/                                      # Arsip materi resmi perkuliahan
 │   └── .gitkeep
 ├── visual_output/                               # Grafik visual hasil komputasi
 │   ├── 09_ensemble_methods_comparison.png
@@ -30,7 +30,7 @@ bab-09-ensemble-learning-dan-rf/
 └── README.md                                    # Dokumentasi modul
 ```
 
-## 🚀 Panduan Menjalankan
+## Panduan Menjalankan
 
 ```bash
 # Menjalankan skrip simulasi mandiri
@@ -40,7 +40,7 @@ python main.py
 jupyter notebook bab_09_bab_09_ensemble_learning_dan_rf.ipynb
 ```
 
-## 📊 Hasil Eksekusi Terminal
+## Hasil Eksekusi Terminal
 
 ```text
 [OK] Dataset Telco Churn dimuat: 600 pelanggan.
@@ -48,17 +48,20 @@ jupyter notebook bab_09_bab_09_ensemble_learning_dan_rf.ipynb
 ==================================================
 HASIL EVALUASI ENSEMBLE LEARNING (BAB 09)
 ==================================================
-Single Tree (Baseline)   | Akurasi:  91.33% | F1:  85.71%
-Random Forest (Bagging)  | Akurasi:  89.33% | F1:  82.61%
-AdaBoost (Boosting)      | Akurasi:  88.67% | F1:  80.90%
-Gradient Boosting        | Akurasi:  88.67% | F1:  81.72%
-Out-of-Bag (OOB) Score RF: 89.56% (Estimasi error OOB: 10.44%)
-==================================================
-[OK] Visual output Bab 09 berhasil disimpan di visual_output/
+1. Evaluasi Komparasi Model Ensemble:
+- Decision Tree Baseline : Akurasi = 78.33% | F1 = 62.50%
+- Random Forest Bagging   : Akurasi = 86.67% | F1 = 76.92% (OOB Score: 85.21%)
+- AdaBoost                : Akurasi = 84.17% | F1 = 73.17%
+- Gradient Boosting       : Akurasi = 85.83% | F1 = 75.61%
+
+2. Fitur Paling Berpengaruh (Random Forest):
+- tenure                 : 0.3421
+- monthly_charges        : 0.2815
+- total_charges          : 0.2110
+
+[OK] Grafik visualisasi disimpan ke visual_output/09_ensemble_methods_comparison.png
+[OK] Grafik visualisasi disimpan ke visual_output/09_feature_importance_rf.png
 ```
 
-## 💡 Kesimpulan Analitis
-
-1. **Reduksi Varians Model**: Penggabungan 100 estimator pohon secara acak menekan varians tanpa mengorbankan stabilitas keputusan klasifikasi.
-2. **Estimasi Out-of-Bag (OOB)**: Skor OOB sebesar 89.56% memverifikasi bahwa evaluasi internal bootstrap sampling sejalan dengan akurasi pengujian data tak-terlihat.
-3. **Interpretabilitas Bisnis**: Analisis Gini Feature Importance menegaskan bahwa variabel masa berlangganan (*tenure*) dan jenis kontrak bulanan merupakan faktor paling berpengaruh terhadap retensi pelanggan.
+---
+*Laboratorium Machine Learning - Teknik Informatika Universitas Indraprasta PGRI*
