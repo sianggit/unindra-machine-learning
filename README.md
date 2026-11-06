@@ -10,7 +10,7 @@
 | **Dosen Pengampu** | **Nurfidah Dwitiyanti, M.Si.** |
 | **Institusi** | Fakultas Teknik dan Ilmu Komputer, **Universitas Indraprasta PGRI (Unindra)** |
 | **Portal Edukasi Web (Vercel)** | **[ml-lab-anggitp.vercel.app](https://ml-lab-anggitp.vercel.app/)** |
-| **Layanan Produksi Streamlit Cloud** | **[unindra-machine-learning-anggitp.streamlit.app](https://unindra-machine-learning-anggitp.streamlit.app/)** |
+| **Layanan Produksi Streamlit Cloud** | **[ml-lab-anggitp.streamlit.app](https://ml-lab-anggitp.streamlit.app/)** |
 
 ---
 
@@ -20,7 +20,7 @@ Portofolio ini terhubung dengan dua platform produksi aktif:
 
 1. **Portal Edukasi WebAssembly (Vercel Next.js)**: [https://ml-lab-anggitp.vercel.app/](https://ml-lab-anggitp.vercel.app/)  
    Menyediakan kurikulum interaktif 14 bab perkuliahan, simulasi eksekusi kode Python langsung di peramban tanpa backend server via Pyodide WebAssembly, showcase penugasan lengkap, dan generator ekspor laporan PDF.
-2. **Aplikasi Produksi Analisis Risiko Kredit (Streamlit Cloud)**: [https://unindra-machine-learning-anggitp.streamlit.app/](https://unindra-machine-learning-anggitp.streamlit.app/)  
+2. **Aplikasi Produksi Analisis Risiko Kredit (Streamlit Cloud)**: [https://ml-lab-anggitp.streamlit.app/](https://ml-lab-anggitp.streamlit.app/)  
    Antarmuka analitis keputusan komite kredit perbankan interaktif (Bab 14) berbasis model ensemble Random Forest terlatih dengan evaluasi keputusan multi-kriteria.
 
 ---

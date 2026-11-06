@@ -71,7 +71,7 @@ python test_deployment_apps.py
 
 ### 3. Mengakses Live Cloud Deployment
 
-- **Streamlit Community Cloud**: [https://unindra-machine-learning-anggitp.streamlit.app/](https://unindra-machine-learning-anggitp.streamlit.app/)
+- **Streamlit Community Cloud**: [https://ml-lab-anggitp.streamlit.app/](https://ml-lab-anggitp.streamlit.app/)
 - **Vercel Interactive Lab**: [https://ml-lab-anggitp.vercel.app/ml-lab/14-model-deployment-dan-mini-project](https://ml-lab-anggitp.vercel.app/ml-lab/14-model-deployment-dan-mini-project)
 
 ---
