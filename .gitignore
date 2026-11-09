@@ -23,3 +23,8 @@ dist/
 
 # Intermediate HTML Print Templates
 laporan_printable.html
+
+# UTS Temporary / Draft Answer Sheets
+tugas-uts-pertemuan-1-6/LEMBAR_JAWABAN_RINGKAS_UTS_1JAM.md
+tugas-uts-pertemuan-1-6/LEMBAR_JAWABAN_ANALITIS_UTS.md
+
